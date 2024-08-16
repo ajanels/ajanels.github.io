@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Colores</title>
+    <link rel="stylesheet" href="PCOLOR.CSS">
+</head>
+<body>
+    <header>
+        <h1>Paleta de Colores</h1>
+    </header>
+    
+    <section class="color-palette">
+        <div class="color-box" style="background-color: #42E2B8;">
+            <p>#42E2B8</p>
+        </div>
+        <div class="color-box" style="background: linear-gradient(135deg, #7b2cbf 0%, #6e2a91 30%, #3a0ca3 70%, #1d4ed8 100%);">
+            <p>Gradiente</p>
+        </div>
+        <div class="color-box" style="background: linear-gradient(135deg, #00aaff, #0044cc);">
+            <p>Fondo del Modal</p>
+        </div>
+        <div class="color-box" style="background-color: #ddd;">
+            <p>#ddd</p>
+        </div>
+        <div class="color-box" style="background-color: #4caf50;">
+            <p>#4caf50</p>
+        </div>
+        <div class="color-box" style="background-color: rgba(255, 255, 255, .2);">
+            <p>Fondo del Testimonio</p>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Detalles del Color</h2>
+            <p>Más información sobre los colores y su uso en el diseño.</p>
+        </div>
+    </div>
+
+    <button class="btn primary full" onclick="openModal()">Abrir Modal</button>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

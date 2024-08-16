@@ -1,0 +1,117 @@
+:root {
+  --font: 'Oxygen', sans-serif;
+  --primary: #42E2B8;
+  --gradient: linear-gradient(135deg, #7b2cbf 0%, #6e2a91 30%, #3a0ca3 70%, #1d4ed8 100%);
+  --black: #000;
+  --card-bg: #333;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--gradient);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center; /* Centra el título y el contenedor de tarjetas */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Espacio entre el título y las tarjetas */
+  color: var(--text-color); /* Asegura que el título sea visible sobre el fondo */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  flex-wrap: nowrap; /* Asegura que las tarjetas no se envuelvan */
+  overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 15px; /* Aumenta el radio de las esquinas */
+  padding: 20px;
+  width: 260px; /* Tamaño aumentado de las tarjetas */
+  height: 500px; /* Tamaño aumentado de las tarjetas */
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: -90px; /* Ajusta el margen para mostrar el 90% de la tarjeta anterior */
+  opacity: 1; /* Asegúrate de que las tarjetas siempre sean opacas */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos internos se alineen verticalmente */
+}
+
+.card:first-child {
+  margin-left: 0; /* Elimina el margen para la primera tarjeta */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header img {
+  height: 190px; /* Ajusta el tamaño del logo */
+}
+
+
+.card-body {
+  flex: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido verticalmente */
+}
+
+.card-body img {
+  width: 100%;
+  height: 50%; /* Ocupa la mitad de la altura del contenedor de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+  border-radius: 10px; /* Aumenta el radio de las esquinas de las imágenes */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer button {
+  background-color: var(--primary);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px; /* Ajusta el radio de las esquinas del botón */
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-20px) translateZ(100px); /* Ajusta la profundidad del efecto hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Aumenta la sombra en hover */
+  z-index: 10;
+  opacity: 1; /* Asegúrate de que la tarjeta en hover sea completamente opaca */
+}
+
+/* Ajusta la opacidad de las tarjetas que no están en hover */
+.card:not(:hover) {
+  opacity: 1; /* Asegura que todas las tarjetas sean completamente opacas */
+}
+
+
+
