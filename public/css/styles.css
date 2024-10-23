@@ -1,0 +1,597 @@
+
+:root {
+  --font: 'Oxygen', sans-serif;
+  --primary: #0e396d;
+  --gradient: linear-gradient(135deg, #7b2cbf 0%, #6e2a91 30%, #3a0ca3 70%, #1d4ed8 100%);
+  --black: black;
+}
+
+
+
+
+body {
+  font-family: var(--font);
+  background: var(--gradient);
+  margin: 0;
+}
+/* Header Styles */
+header {
+  background-color: var(--primary); /* Usa el color primario o el que prefieras */
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 20px;
+  color: white;
+}
+
+
+
+
+/* Estilos para el footer */
+.footer {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background-color: var(--primary); /* Usa el color primario o el que prefieras */
+  color: white; /* Asegura que el texto sea visible */
+  text-align: center; /* Centra el texto en el footer */
+  padding: 1em 0; /* Añade un poco de espacio alrededor del contenido */
+  position: fixed; /* Fija el footer en la parte inferior de la pantalla */
+  bottom: 0;
+  left: 0;
+}
+
+.footer-content p {
+  margin: 0px 0;
+}
+
+.header-text {
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+
+.u-wrapper {
+  max-inline-size: 1232px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.h1 {
+  font-size: 59px;
+  line-height: 95px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.h1 span {
+
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 77px;
+  white-space: nowrap; /* Evita el ajuste de línea */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* Muestra "..." si el texto se desborda */
+  width: 100%; /* O ajusta el ancho según sea necesario */
+  display: inline-block; /* Permite aplicar estilos de ancho y altura si es necesario */
+}
+
+
+.social-item {
+  background: var(--primary);
+  display: inline-block;
+  inline-size: 44px;
+  block-size: 44px;
+  text-align: center;
+  line-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  border: 2px solid var(--black);
+}
+
+.social-item + .social-item {
+  margin-left: 1em;
+}
+
+.social-item img {
+  vertical-align: middle;
+}
+
+.btn {
+  /* font-family: var(--font); */
+  border-radius: 90px;
+  letter-spacing: 1.25px;
+  background: initial;
+  block-size: 50px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid var(--black);
+  font-weight: bold;
+  padding: 0 1.5em;
+}
+.btn.full {
+  width: 100%;
+}
+
+.btn.primary {
+  background: var(--primary);
+}
+
+.btn.secondary {
+}
+
+.btn.secondary img{
+  position: relative;
+  bottom: 1px;
+}
+.btn i {
+  display: inline-block;
+}
+.btn span {
+  vertical-align: middle;
+}
+.btn i img {
+  vertical-align: middle;
+}
+
+.hero {
+  margin-block-end: 20px;
+}
+
+.hero-content {
+
+}
+.hero-content img{
+  display: block;
+  margin: 50 auto;
+  /* text-align: center; */
+}
+
+
+.header {
+  padding: 1em 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pre-projects-content {
+  text-align: center;
+}
+
+.pre-projects-content p {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: 0.5%;
+}
+
+.pre-projects-content p + p {
+  font-weight: bold;
+}
+
+.project {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-areas: "image" "description";
+}
+.project {
+}
+
+.project {
+  display: flex; /* Activa el modelo flexbox */
+  flex-direction: column; /* Alinea los elementos en columna */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  height: 2vh; /* Establece la altura del artículo para ocupar toda la altura de la ventana */
+}
+
+.project-description {
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.project-cta {
+  margin-top: opx; /* Espacio superior para separar el botón del resto del contenido */
+}
+
+.btn {
+  display: inline-block; /* Permite que el botón se ajuste a su contenido */
+  padding: 10px 5px; /* Espacio interno en el botón */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Color del texto del botón */
+  background-color: var(--primary); /* Color de fondo del botón, usa la variable de color primario */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  font-size: 16px; /* Tamaño de la fuente del botón */
+}
+
+.btn.primary {
+  background-color: var(--primary); /* Color de fondo para el botón primario */
+}
+
+.btn.full {
+  width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+}
+
+
+.testimony {
+  padding: 1.5em;
+  border-radius: 1.5em;
+  background: rgba(255,255,255,.2);
+  border: 3.98px solid rgba(255,255,255,.4);
+}
+.testimony-image {
+  text-align: center;
+}
+.testimony-copy {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.testimony-title {
+  font-size: 12px;
+  color: rgba(0,0,0,.4);
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.project, .testimony {
+  margin-block: 2.5em;
+}
+
+.form {
+  max-inline-size: 550px;
+  margin: auto;
+}
+
+.form label {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  padding-inline-start: .5em;
+}
+
+.form label span {
+  color: #DA1414;
+}
+
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8em;
+  border-radius: .5em;
+  border: 1px solid #858C94;
+}
+.form textarea {
+  margin-block-end: 2em;
+  font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+  color: #0F0A0A88;
+}
+
+
+.contact {
+  margin-block-end: 5em;
+}
+
+.footer {
+  text-align: center;
+}
+
+#trucazo {
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description image";
+  }
+
+  .hero-description {
+    grid-area: description;
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    padding: 20px; /* Añade espacio interno para agrandar la sección */
+    max-width: 600px; /* Establece un ancho máximo más grande si es necesario */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Aumenta el tamaño del título */
+.hero-description h1 {
+    font-size: 2.5em; /* Ajusta el tamaño del título */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+/* Ajusta el tamaño del párrafo */
+.hero-description p {
+    font-size: 1.1em; /* Aumenta el tamaño de la descripción */
+    line-height: 1.5; /* Mejora la legibilidad aumentando el espacio entre líneas */
+}
+
+
+  .hero-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-image {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 500px;
+  height: 350px;
+  border-radius: 50%;
+  margin-left: 100px; /* Ajusta este valor para moverlo más a la izquierda */
+}
+
+
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Muestra toda la imagen dentro del contenedor sin recortes */
+}
+
+
+
+  .pre-projects-content {
+    max-inline-size: 900px;
+    margin: auto;
+  }
+
+  .project {
+    grid-template-areas: "description image";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+  }
+  .project-cta {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .project-cta button + button {
+    margin: 0;
+  }
+
+  .testimony {
+    margin: auto;
+    padding: 5em;
+    text-align: center;
+  }
+  .testimony-copy {
+    font-size: 2.2em;
+    line-height: 55px;
+  }
+
+  .testimony-title {
+    font-size: 1.5em;
+  }
+  .project, .testimony {
+    margin-block: 5em;
+  }
+
+  .form .tag span {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/* Button styles */
+.btn.primary.full {
+  padding: 10px 20px;
+  background-color: #4412d8;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Ajusta el valor para más o menos redondez */
+  cursor: pointer;
+  text-align: center;
+  margin-top: -80px; /* Usa un valor negativo para subir el botón */
+}
+
+
+
+.btn.primary.full:hover {
+  background-color: #08775a;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Optional, to limit maximum width */
+  border-radius: 10px; /* Optional, for rounded corners */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Ocultar modal por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #00aaff, #0044cc); /* Fondo degradado azul */
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Ocultar modal por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #00aaff, #0044cc); /* Fondo degradado azul */
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para las barras de porcentaje */
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 15px; /* Ancho de la barra */
+  width: 70%; /* Ajusta el ancho de la barra */
+  margin-right: 10px; /* Espacio entre la barra y el porcentaje */
+  position: relative;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.percentage {
+  font-size: 14px;
+  color: white;
+}
+
+/* Estilos para el modal */
+.modall {
+  display: none; /* Ocultar modal por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+}
+
+.modal-contentt {
+  background: linear-gradient(135deg, #00aaff, #0044cc); /* Fondo degradado azul */
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.closee {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
