@@ -13,44 +13,12 @@ body {
   font-family: var(--font);
   background: var(--gradient);
   margin: 0;
-}
-/* Header Styles */
-header {
-  background-color: var(--primary); /* Usa el color primario o el que prefieras */
-  display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
-  padding: 20px;
-  color: white;
-}
-
-
-
-
-/* Estilos para el footer */
-.footer {
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  background-color: var(--primary); /* Usa el color primario o el que prefieras */
-  color: white; /* Asegura que el texto sea visible */
-  text-align: center; /* Centra el texto en el footer */
-  padding: 1em 0; /* Añade un poco de espacio alrededor del contenido */
-  position: fixed; /* Fija el footer en la parte inferior de la pantalla */
-  bottom: 0;
-  left: 0;
+  display: center    
 }
 
 .footer-content p {
   margin: 0px 0;
 }
-
-.header-text {
-  margin: 0;
-  text-align: center;
-}
-
-
-
-
 
 .u-wrapper {
   max-inline-size: 1232px;
@@ -152,20 +120,10 @@ header {
 }
 .hero-content img{
   display: block;
-  margin: 50 auto;
-  /* text-align: center; */
+  margin: 100 auto;
 }
 
 
-.header {
-  padding: 1em 0;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .pre-projects-content {
   text-align: center;
@@ -187,8 +145,7 @@ header {
   /* grid-template-rows: 1fr 1fr; */
   grid-template-areas: "image" "description";
 }
-.project {
-}
+
 
 .project {
   display: flex; /* Activa el modelo flexbox */
@@ -595,3 +552,106 @@ input::-webkit-input-placeholder {
 }
 
 
+#header {
+  background: linear-gradient(45deg, #e11512, #072ce2); /* Fondo degradado */
+  color: #FFFFFF; /* Color de texto blanco */
+  padding: 10px 20px; /* Espaciado */
+  display: flex;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1000;
+  border-radius: 0 0 10px 10px; /* Bordes inferiores redondeados */
+}
+
+.footer {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  background: linear-gradient(45deg, #e11512, #072ce2); /* Fondo degradado */
+  color: #FFFFFF; /* Color de texto blanco */
+  text-align: center; /* Centra el texto en el footer */
+  padding: 10px 20px; /* Espaciado */
+  position: fixed; /* Fija el footer en la parte inferior de la pantalla */
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Sombra similar al header */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  border-radius: 10px 10px 0 0; /* Bordes superiores redondeados */
+}
+
+
+.logo a {
+  color: #FFFFFF; /* Color del texto del logo */
+  text-decoration: none;
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold;
+}
+
+.logo span {
+  color: #FFD700; /* Color para resaltar el nombre */
+}
+
+
+.menu:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto al pasar el cursor */
+}
+
+/* Estilos para el modal */
+.menu {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 1px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-right: 50px; /* Ajusta el valor para mover el menú hacia la izquierda */
+}
+/* Estilos para el menú overlay */
+.menu-overlay {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: -50;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #3333333f; /* Color de fondo del menú */
+  padding: 20px;
+  color: #fff;
+  z-index: 1001;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.133);
+  transition: transform 0.3s ease; /* Transición suave */
+  transform: translateX(100%); /* Empieza fuera de la pantalla a la derecha */
+}
+
+.menu-overlay .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-overlay .links li {
+  margin: 20px 0;
+}
+
+.menu-overlay .links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.close-menu {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#youtube-video {
+  width: 100%; /* Ancho del iframe */
+  height: 315px; /* Altura del iframe */
+}

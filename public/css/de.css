@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b3e5fc, #0288d1);
+    color: #333;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.chess-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 600px; /* Añadido para que la imagen baje */
+    margin-bottom: 20px;
+}
+
+
+.description h1 {
+    font-size: 24px;
+    color: #0288d1;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0277bd;
+}
+
+.card-footer {
+    margin-top: 20px;
+}
+
+.card-footer button {
+    padding: 10px 20px;
+    background-color: #42A5F5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-footer button:hover {
+    background-color: #1E88E5;
+}

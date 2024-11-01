@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="./proyectos.hbs">
   <link rel="stylesheet" href="./js/script.js">
   <link rel="stylesheet" href="./js/scriptt.js">
-  <title>Portafolio Christian</title>
+  <title>{{titulo}}</title>
 </head>
 <body>
-   <header class="header">
-    <div class="header-content">
-      <h1 class="header-text">               y conoceréis la verdad y la verdad os hará libres</h1>
-    </div>
-  </header>
+
+   {{>header}}
+   {{>navbar}}
+ 
+
+   <br><br><br> <br><br>
   <section class="hero">
     <div class="u-wrapper">
       <div class="hero-content">
@@ -24,13 +25,13 @@
         </div>
         <div class="hero-description">
           <h1 class="h1">
-            <span class="h3">¡Portafolio de Christian!</span>
-          </h1>
-          <p>Estudiante de ingenieria en sistemas y ciencias de la computacion de la universidad Mariano Galvez de Guatemala</p>
-          
+            <span class="h3">¡Portafolio Web!</span>
+          </h1>  
+          <p>Bienvenido a mi portafolio web, una vitrina digital que muestra mis proyectos y habilidades en desarrollo web. Esta aplicación fue creada utilizando Express, un framework minimalista y flexible para Node.js, que me permitió construir un servidor robusto y escalable.</p>          
+          <br>
   <section id="skills" class="skills">
     <div class="u-wrapper">
-      <button id="openModal" class="btn primary full">Habilidades</button>
+      <button id="openModal" class="btn primary full">SKILLS</button>
     </div>
   </section>
   <hr>
@@ -123,12 +124,8 @@
               <a href="proyectos" class="btn primary full">Ver proyectos</a>
             </div>
         </article>
-        <footer class="footer">
-    <div class="footer-content">
-      <p>Estudiante: Christian Ajanela</p>
-      <p>Email: cajanela1@miumg.edu.gt</p>
-      <p>Teléfono: +502</p>
-    </div>
-  </footer>
+
+        {{>footer}}
         <script src="./js/script.js"></script></body>
+        <script src="./js/menu.js"></script>
 </html>

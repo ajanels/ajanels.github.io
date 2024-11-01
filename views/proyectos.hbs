@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="./css/estilos.css">
+     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-   
-
+   {{>header}}
+{{>navbar}}
     <div class="container">
+        <br>
         <h1>Mis Proyectos</h1>
         <div class="card-footer">
             <a href="/">
                 <button >regresar a pagina principal</button>
             </a>
         </div>
+        <br>
         <div class="card-container">
+            <div class="card" id="card0">
+                <div class="card-header">
+                    <img src="./images/web.png" alt="Jack Daniels">
+                </div>
+                <div class="card-body">
+                    <h3>APLICACION WEB</h3>
+                    <p> ejemplo básico de una aplicación web utilizando Node.js y Express, junto con Handlebars como motor de plantillas</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/webservice">
+                        <button >Ver</button>
+                    </a>
+                </div>
+            </div>
+             <div class="card" id="card0.1">
+                <div class="card-header">
+                    <img src="./images/PORTAFOLIO.png" alt="Jack Daniels">
+                </div>
+                <div class="card-body">
+                    <h3>PORTAFOLIO WEB</h3>
+                    <P>Este portafolio web es una aplicación completa diseñada utilizando Node.js y Express, con el motor de plantillas Handlebars.</P>
+                </div>
+                <div class="card-footer">
+                    <a href="/portafolio">
+                        <button >Ver</button>
+                    </a>
+                </div>
+            </div>
             <div class="card" id="card1">
                 <div class="card-header">
                     <img src="./images/AJEDREZ/EJECUCION.png" alt="Jack Daniels">
@@ -79,8 +110,8 @@
                     <img src="./images/derechi informatico/Captura de pantalla 2024-08-16 085642.png" alt="">
                 </div>
                 <div class="card-body">
-                    <h3>PROYECTO DE VALIDACION DE CREDENCIALES</h3>
-                    <p>Sisstema realizado en c# con el fin de implementar la validacion de credeenciales y autenticacion de usuarios</p>
+                    <h3>VALIDACION DE CREDENCIALES</h3>
+                    <p>Sistema realizado en c# implementando la validacion de credeenciales </p>
                 </div>
                 <div class="card-footer">
                     <a href="/di">        
@@ -107,12 +138,8 @@
         </div>
     </div>
 
-    <footer class="footer">
-    <div class="footer-content">
-      <p>Estudiante: Christian Ajanela</p>
-      <p>Email: cajanela1@miumg.edu.gt</p>
-      <p>Teléfono: +502</p>
-    </div>
-  </footer>
+{{>footer}}
 </body>
+        <script src="./js/menu.js"></script>
+
 </html>

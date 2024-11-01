@@ -33,12 +33,15 @@ body {
 
 .chess-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 900px;
     border-radius: 8px;
-    margin-top: 700px; /* Añadido para que la imagen baje */
+    margin-top: 900px; 
     margin-bottom: 20px;
 }
 
+.description {
+    text-align: justify;         /* Justifica el texto en esta clase */
+}
 
 .description h1 {
     font-size: 24px;

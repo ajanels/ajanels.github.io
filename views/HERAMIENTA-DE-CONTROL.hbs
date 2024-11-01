@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/integral.css">
+    <link rel="stylesheet" href="./css/EC.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>AJEDREZ</title>
 </head>
 <body>
-   
+   {{>header}}
+   {{>navbar}}
     <div class="overlay">
         <div class="content-box">
             <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br>
+            <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br>
+
             <video width="100%" controls>
                 <source src="./videos/PROYECYO SO.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -24,7 +28,7 @@
 <p>Este proyecto demuestra habilidades en el desarrollo de software de sistemas, así como en la implementación de algoritmos de gestión de procesos y memoria en C#.</p>
 
             </div>
-            <a href="https://github.com/ajanels/proyecto-AJEDREZ">VER REPOSITORIO DEL PROYECTO</a>
+             <a href="https://github.com/ajanels/proyecto-AJEDREZ" class="project-link">Ver Repositorio del Proyecto</a>
             <BR><br>
             <div class="card-footer">
                 <a href="/proyectos">
@@ -36,5 +40,8 @@
             </div>
         </div>
     </div>
+    {{>footer}}
 </body>
+        <script src="./js/menu.js"></script>
+
 </html>

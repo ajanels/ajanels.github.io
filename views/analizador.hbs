@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/lexico.CSS">
-    <title>AJEDREZ</title>
+      <link rel="stylesheet" href="./css/styles.css">
+    <title>ANALIZADOR LÉXICO Y SINTÁCTICO</title>
 </head>
 <body>
+    {{>header}}
+    {{>navbar}}
     <div class="overlay">
         <div class="content-box">
-            <img src="./images/ANALIZADOR LEXICO/ejecutado.png" alt="Imagen de ajedrez" class="chess-image">
+            <img src="./images/ANALIZADOR LEXICO/ejecutado.png" alt="Imagen del analizador léxico" class="chess-image">
             <div class="description">
-                <br><br>
                 <h1>Proyecto de Analizador Léxico y Sintáctico en Java</h1>
                 <p>Este proyecto consiste en el desarrollo de un analizador léxico y sintáctico en Java, diseñado para procesar y analizar el código fuente de un lenguaje de programación específico. Utilizando técnicas avanzadas de análisis de lenguaje, el proyecto permite descomponer el código en tokens y verificar su estructura sintáctica para asegurar que siga las reglas gramaticales definidas.</p>
                 <p>El analizador léxico se encarga de identificar y clasificar los elementos básicos del lenguaje, como palabras clave, identificadores, operadores y delimitadores. Cada uno de estos elementos es tokenizado y preparado para el análisis sintáctico. El analizador sintáctico, por su parte, valida la estructura del código fuente, asegurando que la secuencia de tokens siga una gramática predefinida, y detecta posibles errores de sintaxis.</p>
                 <p>El proyecto se desarrolló en Apache NetBeans, lo que facilitó la escritura, depuración y gestión del código. Además, se utilizaron principios de programación orientada a objetos para crear un sistema modular y mantenible, permitiendo futuras extensiones o modificaciones al analizador.</p>
                 <p>Este proyecto no solo demuestra habilidades en análisis de lenguajes formales, sino también en la implementación práctica de un compilador básico en Java.</p>
-                </div>
-            <a href="https://github.com/ajanels/proyecto-AJEDREZ">VER REPOSITORIO DEL PROYECTO</a>
-            <BR><br>
+            </div>
+            <a href="https://github.com/ajanels/proyecto-ANALIZADOR-LEXICO" class="project-link">Ver Repositorio del Proyecto</a>
             <div class="card-footer">
+                <h1>video explicativo</h1>
+                <!-- Video de YouTube -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3BDphi6lvUk?si=hanIU5R5yIkjc4sZ" title="YouTube video player" frameborder="0" allow="" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
                 <a href="/proyectos">
-                    <button>regresar</button>
+                    <button>Regresar</button>
                 </a>
-            </div>
-            
-            </div>
             </div>
         </div>
     </div>
+    {{>footer}}
 </body>
+        <script src="./js/menu.js"></script>
+
 </html>

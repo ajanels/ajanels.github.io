@@ -1,79 +1,87 @@
-:root {
-    --font: 'Oxygen', sans-serif;
-    --primary: #42E2B8;
-    --gradient: linear-gradient(135deg, #7b2cbf 0%, #6e2a91 30%, #3a0ca3 70%, #1d4ed8 100%);
-    --black: black;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
-    height: 100%; /* Asegura que html y body ocupen el 100% de la altura de la ventana */
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background: var(--gradient); /* Aplica el degradado como fondo */
-    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-attachment: fixed; /* Fija el fondo para que no se mueva con el scroll */
-    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b3e5fc, #0288d1);
+    color: #333;
 }
-
 
 .overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    position: absolute; /* Asegura que se superponga sobre otros contenidos */
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro y semi-transparente para el overlay */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content-box {
-    color: white;
-    text-align: center; /* Centra el texto dentro del contenedor */
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el contenedor de contenido */
-    border-radius: 10px; /* Bordes redondeados */
-    max-width: 80%; /* Ajusta el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 90%;
+    text-align: center;
 }
 
 .chess-image {
-    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    display: block; /* Asegura que la imagen se muestre como un bloque para centrarla */
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 500px; 
+    margin-bottom: 20px;
 }
+
 
 .description h1 {
     font-size: 24px;
-    margin: 10px 0; /* Espacio arriba y abajo del título */
+    color: #0288d1;
+    margin-bottom: 10px;
 }
 
 .description p {
     font-size: 16px;
-    margin-bottom: 10px; /* Espacio abajo del párrafo */
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
 }
+
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0277bd;
+}
+
 .card-footer {
-    display: flex;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .card-footer button {
-    background-color: var(--primary);
-    color: var(--text-color);
+    padding: 10px 20px;
+    background-color: #42A5F5;
+    color: white;
     border: none;
-    border-radius: 8px;
-    padding: 12px 24px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
+.card-footer button:hover {
+    background-color: #1E88E5;
+}

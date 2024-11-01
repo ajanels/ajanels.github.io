@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #5fff6f, #7b9efe); /* Fondo con degradado */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.error-container {
+    text-align: center;
+    background: white; /* Fondo blanco para el contenedor de error */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 100%; /* Ancho del contenedor de la imagen */
+    max-width: 300px; /* Ancho máximo de la imagen */
+    margin: 0 auto 20px; /* Centrado y margen inferior */
+}
+
+.error-image {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    border-radius: 10px; /* Esquinas redondeadas para la imagen */
+}
+
+.error-code {
+    font-size: 96px; /* Tamaño grande para el código de error */
+    margin: 10px 0;
+    color: #f44336; /* Color para el código de error */
+}
+
+.error-message {
+    font-size: 24px; /* Tamaño para el mensaje de error */
+    margin: 10px 0;
+}
+
+.error-description {
+    font-size: 18px; /* Tamaño para la descripción */
+    margin: 20px 0;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #42E2B8; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #36b89a; /* Color más oscuro al pasar el ratón */
+}

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/integral.css">
+        <link rel="stylesheet" href="./css/styles.css">
     <title>AJEDREZ</title>
 </head>
 <body>
+     {{>header}}
+   {{>navbar}}
+
     <div class="overlay">
         <div class="content-box">
             <img src="./images/CALULADORA DE INTEGRALES/Captura de pantalla 2024-08-16 083649.png" alt="Imagen de ajedrez" class="chess-image">
@@ -18,9 +22,13 @@
 <p>El proyecto fue desarrollado utilizando Apache NetBeans como el entorno de desarrollo integrado (IDE), lo que facilitó la escritura, depuración y gestión del código. La estructura del código se basa en principios de programación orientada a objetos, asegurando que el sistema sea modular, extensible y fácil de mantener.</p>
 <p>Este proyecto demuestra habilidades en el desarrollo de software matemático avanzado, así como en la implementación de algoritmos de cálculo simbólico y numérico en Java.</p>
             </div>
-            <a href="https://github.com/ajanels/proyecto-AJEDREZ">VER REPOSITORIO DEL PROYECTO</a>
+             <a href="https://github.com/ajanels/proyecto-AJEDREZ" class="project-link">Ver Repositorio del Proyecto</a>
             <BR><br>
             <div class="card-footer">
+                 <h1>video explicativo</h1>
+                <!-- Video de YouTube -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S_0hnvyse-0?si=1-t_as_mQAEy0lNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
                 <a href="/proyectos">
                     <button>regresar</button>
                 </a>
@@ -30,5 +38,8 @@
             </div>
         </div>
     </div>
+    {{>footer}}
 </body>
+        <script src="./js/menu.js"></script>
+
 </html>

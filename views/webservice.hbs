@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/web.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    <title>AJEDREZ</title>
+</head>
+<body>
+     {{>header}}
+   {{>navbar}}
+
+    <div class="overlay">
+        <div class="content-box">
+            <img src="./images/js.png" alt="Imagen de ajedrez" class="chess-image">
+            <div class="description">
+                <br><br>
+                <h1>Aplicación Web Modular con Express y Handlebars</h1>
+                <p>Este proyecto consiste en una aplicación web desarrollada utilizando Node.js y el framework Express. La aplicación utiliza Handlebars (hbs) como motor de plantillas para renderizar las vistas, permitiendo una separación clara entre la lógica de la aplicación y la presentación de los datos. A continuación se describen las principales características del proyecto:
+
+Estructura del Proyecto
+Servidor Express: El servidor se inicializa y escucha en un puerto definido por la variable de entorno PORT, con un valor predeterminado de 8080.
+Configuración del Motor de Vistas: Se establece hbs como motor de vistas, permitiendo la renderización de plantillas .hbs. Las vistas se encuentran en la carpeta views, y se registran partials para reutilizar componentes de interfaz.
+Archivos Estáticos: La aplicación sirve archivos estáticos (como CSS y JavaScript) desde la carpeta public, facilitando el diseño de la interfaz de usuario.</p>
+            </div>
+             <a href="https://github.com/ajanels/05-web-services" class="project-link">Ver Repositorio del Proyecto</a>
+            <BR><br>
+            <div class="card-footer">
+                 <h1>video explicativo</h1>
+                <!-- Video de YouTube -->
+<iframe src="https://umgt.sharepoint.com/sites/SL-DESARROLLO-WEB/_layouts/15/embed.aspx?UniqueId=498d46be-ccf1-499f-b008-4dc89dd0f08a&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Ejercicios de NodeJS-20240913_203458-Grabación de la reunión.mp4"></iframe>
+                <br>
+                <a href="/proyectos">
+                    <button>regresar</button>
+                </a>
+            </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+        <script src="./js/menu.js"></script>
+
+</html>

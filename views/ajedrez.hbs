@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/AJEDREZ.CSS">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>AJEDREZ</title>
 </head>
 <body>
+    {{>header}}
+    {{>navbar}}
     <div class="overlay">
         <div class="content-box">
             <img src="./images/AJEDREZ/EJECUCION.png" alt="Imagen de ajedrez" class="chess-image">
             <div class="description">
-                <br><br>
                 <h1>Proyecto de Ajedrez en Java</h1>
                 <p>Este es un proyecto desarrollado en Java que simula un juego de ajedrez completo con IA. El diseño y la lógica están cuidadosamente implementados para ofrecer una experiencia fluida y desafiante. El juego permite enfrentarse a una IA que sigue algoritmos avanzados de toma de decisiones para crear partidas desafiantes y realistas.</p>
                 <p>La interfaz de usuario está diseñada para ser intuitiva y fácil de usar, proporcionando una experiencia de juego agradable. El proyecto se desarrolló utilizando Apache NetBeans como el entorno de desarrollo integrado (IDE), que facilitó la escritura, depuración y gestión del código. Además, se implementaron técnicas avanzadas de programación orientada a objetos para asegurar una estructura de código robusta y mantenible.</p>
-                <p>Este proyecto no solo demuestra habilidades en programación de juegos, sino también en la integración de inteligencia artificial en aplicaciones Java.</p> 
+                <p>Este proyecto no solo demuestra habilidades en programación de juegos, sino también en la integración de inteligencia artificial en aplicaciones Java.</p>
             </div>
-            <a href="https://github.com/ajanels/proyecto-AJEDREZ">VER REPOSITORIO DEL PROYECTO</a>
-            <BR><br>
+            <a href="https://github.com/ajanels/proyecto-AJEDREZ" class="project-link">Ver Repositorio del Proyecto</a>
             <div class="card-footer">
-                <a href="/proyectos">
-                    <button>regresar</button>
-                </a>
-            </div>
-            
-            </div>
+                <h1>video explicativo</h1>
+                <!-- Video de YouTube -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I9Z6XQe9OU4?si=nAkZbFiMDdJft0e2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><a href="/proyectos">
+                    <button>Regresar</button>
+                </a><br>
             </div>
         </div>
     </div>
+    {{>footer}}
 </body>
+        <script src="./js/menu.js"></script>
+
 </html>
